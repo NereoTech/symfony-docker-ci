@@ -47,4 +47,4 @@ workflows:
                       - build
                   filters:
                       branches:
-                          #nly: main
+                          only: main
