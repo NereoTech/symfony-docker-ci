@@ -1,0 +1,37 @@
+{
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.{js,scss,md}": "prettier --write",
+        "*.php": "php-cs-fixer fix --config=.php-cs-fixer.dist.php"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.24.4",
+        "@babel/preset-env": "^7.24.4",
+        "@babel/preset-react": "^7.24.1",
+        "@symfony/webpack-encore": "^4.6.1",
+        "core-js": "^3.37.0",
+        "file-loader": "^6.0.0",
+        "husky": "^9.0.11",
+        "lint-staged": ">=15.2.2",
+        "prettier": "^3.2.5",
+        "prop-types": "^15.7.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sass": "^1.75.0",
+        "sass-loader": "^14.2.1",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-notifier": "^1.14.1"
+    },
+    "dependencies": {
+        "@tabler/core": "^1.0.0-beta20"
+    }
+}

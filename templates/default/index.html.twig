@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfony Docker CI Demo{% endblock %}
+
+{% block body %}
+    <div class="container my-4">
+        {{ description|markdown_to_html }}
+        <br />
+        <div id="root">This will be modified by Javascript</div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('index') }}
+{% endblock %}

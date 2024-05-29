@@ -1,0 +1,11 @@
+*.md
+!README.md
+*.log
+.git
+.gitignore
+.idea
+node_modules
+public/build/
+public/bundles
+var
+vendor
